@@ -1,0 +1,213 @@
+<div class="container">
+  <header class="header">
+    <h1 id="title" class="text-center">KEAS Studios Enquiry Form</h1>
+    <p id="description" class="description text-center">
+      We create beautiful videos that convert. Let us tell your story!
+    </p>
+  </header>
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Name</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        class="form-control"
+        placeholder="Enter your name"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+        placeholder="Enter your Email"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="number-label" for="number"
+        >How old is your company in years?<span class="clue">(optional)</span></label
+      >
+      <input
+        type="number"
+        name="company age"
+        id="number"
+        min="1"
+        max="99"
+        class="form-control"
+        placeholder="e.g. 1"
+      />
+    </div>
+    <div class="form-group">
+      <p>Which option best describes your current role?</p>
+      <select id="dropdown" name="role" class="form-control" required>
+        <option disabled selected value>Select current role</option>
+        <option value="businessOwner">Business Owner</option>
+        <option value="headOfMarketing">Head of Marketing</option>
+        <option value="employee">Employee</option>
+        <option value="preferNo">Prefer not to say</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>Do you want to hire us to make a beautiful video for you?</p>
+      <label>
+        <input
+          name="make-video"
+          value="definitely"
+          type="radio"
+          class="input-radio"
+          checked
+        />Definitely</label
+      >
+      <label>
+        <input
+          name="make-video"
+          value="maybe"
+          type="radio"
+          class="input-radio"
+        />Maybe</label
+      >
+
+      <label
+        ><input
+          name="make-video"
+          value="not-sure"
+          type="radio"
+          class="input-radio"
+        />Not sure</label
+      >
+    </div>
+
+    <div class="form-group">
+      <p>
+        What field is your business currently in?
+      </p>
+      <select id="business-field" name="businessField" class="form-control" required>
+        <option disabled selected value>Select an option</option>
+        <option value="F&B">Food & Beverages</option>
+        <option value="entertainment">Entertainment</option>
+        <option value="IT">Information Technology</option>
+        <option value="product">Product</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>
+        What kind of video would you like us to make?
+        <span class="clue">(Check all that apply)</span>
+      </p>
+
+      <label
+        ><input
+          name="prefer"
+          value="documentary"
+          type="checkbox"
+          class="input-checkbox"
+        />Documentary</label
+      >
+      <label>
+        <input
+          name="prefer"
+          value="narrative"
+          type="checkbox"
+          class="input-checkbox"
+        />Narrative</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="corporate"
+          type="checkbox"
+          class="input-checkbox"
+        />Corporate </label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="explainer"
+          type="checkbox"
+          class="input-checkbox"
+        />Explainer</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="product"
+          type="checkbox"
+          class="input-checkbox"
+        />Product</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="animation"
+          type="checkbox"
+          class="input-checkbox"
+        />2D and 3D animation</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="educational"
+          type="checkbox"
+          class="input-checkbox"
+        />Educational</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="vlog"
+          type="checkbox"
+          class="input-checkbox"
+        />Vlog</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="shortFilm"
+          type="checkbox"
+          class="input-checkbox"
+        />Short film</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="miniSeries"
+          type="checkbox"
+          class="input-checkbox"
+        />Mini series</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="none"
+          type="checkbox"
+          class="input-checkbox"
+        />None of the above</label
+      >
+    </div>
+
+    <div class="form-group">
+      <p>Any additional questions or anything else you would like us to know?</p>
+      <textarea
+        id="question"
+        class="input-textarea"
+        name="comment"
+        placeholder="Enter your question here..."
+      ></textarea>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
